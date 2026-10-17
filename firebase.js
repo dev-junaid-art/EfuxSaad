@@ -1,0 +1,4 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/13.0.0/firebase-app.js";
+import { getDatabase } from "https://www.gstatic.com/firebasejs/13.0.0/firebase-database.js";
+const firebaseConfig={apiKey:"AIzaSyAjMejkKrV9cI8kyYn_VcymQmZzduvMhm8",authDomain:"messaging-firebase1.firebaseapp.com",databaseURL:"https://messaging-firebase1-default-rtdb.firebaseio.com",projectId:"messaging-firebase1",storageBucket:"messaging-firebase1.firebasestorage.app",messagingSenderId:"789119188156",appId:"1:789119188156:web:78b66aab176c17d36164b9",measurementId:"G-5STG7FDLBV"};
+initializeApp(firebaseConfig); export const db=getDatabase();
