@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#07030a">
+  <title>TwoTalk</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="ambient"><i>✦</i><i>♡</i><i>✧</i><i>·</i></div>
+
+  <main class="shell">
+
+    <!-- GATE SCREEN -->
+    <section id="gate" class="screen">
+      <div class="mascot">🧸</div>
+      <div class="tiny">A PRIVATE LITTLE SPACE</div>
+      <h1>TwoTalk</h1>
+      <p class="lead">Just two people, one quiet chat.</p>
+      
+      <div class="pin-card">
+        <div class="pin-title">ENTER PIN</div>
+        <div id="dots" class="dots"><b></b><b></b><b></b><b></b><b></b></div>
+        <div class="keypad">
+          <button data-n="1">1</button><button data-n="2">2</button><button data-n="3">3</button>
+          <button data-n="4">4</button><button data-n="5">5</button><button data-n="6">6</button>
+          <button data-n="7">7</button><button data-n="8">8</button><button data-n="9">9</button>
+          <span></span><button data-n="0">0</button><button id="erase">⌫</button>
+        </div>
+        <p id="pinStatus">your little code opens the door</p>
+      </div>
+      
+      <footer>TwoTalk · private text room</footer>
+    </section>
+
+    <!-- CHAT SCREEN -->
+    <section id="chat" class="screen hidden">
+      <header class="topbar">
+        <div class="person">
+          <div id="avatar" class="avatar">
+            <img id="avatarImg" src="" alt="Avatar">
+            <span id="avatarEmoji">🧸</span>
+          </div>
+          <div>
+            <strong id="welcome">Welcome</strong>
+            <small id="sub">TwoTalk</small>
+          </div>
+        </div>
+        <button id="lock" class="round" aria-label="Lock screen">⌑</button>
+      </header>
+
+      <!-- CHAT SCREEN এর ভেতরের অংশ -->
+<div class="chatbox">
+  <div class="chat-head">
+    <span class="live"></span>
+    <div>
+      <b>Messages</b>
+      <small id="statusText">online</small>
+    </div>
+    <span class="dots3">•••</span>
+  </div>
+
+  <div id="messages" class="messages">
+    <div class="loading">
+      🧸
+      <small>getting the chat ready…</small>
+    </div>
+  </div>
+
+  <!-- নতুন টাইপিং ইন্ডিকেটর (এখানে বিপরীতজন টাইপ করলে শো করবে) -->
+  <div id="typingIndicator" class="typing-indicator hidden">
+    <div class="typing-dots">
+      <span></span><span></span><span></span>
+    </div>
+    <small id="typingText">typing...</small>
+  </div>
+
+  <form id="form" class="composer">
+    <input id="text" maxlength="1000" placeholder="Type a message…" autocomplete="off" required>
+    <button id="send" aria-label="Send">➤</button>
+  </form>
+</div>
+    </section>
+
+    <!-- ADMIN SCREEN -->
+    <section id="admin" class="screen hidden">
+      <header class="topbar">
+        <div class="person">
+          <div class="avatar">
+            <span>⚙️</span>
+          </div>
+          <div>
+            <strong>Admin Panel</strong>
+            <small>message management</small>
+          </div>
+        </div>
+        <button id="adminLock" class="round" aria-label="Lock admin">⌑</button>
+      </header>
+
+      <div class="adminbox">
+        <div class="admin-head">
+          <b>All messages</b>
+          <small id="adminCount">Loading…</small>
+        </div>
+        <div id="adminMessages" class="admin-messages"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
