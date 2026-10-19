@@ -2,7 +2,7 @@ import{db}from"./firebase.js";import{ref,push,set,update,remove,onChildAdded,onV
 
 const profiles={
   "2025":{name:"EFFAT",welcome:"Welcome, Effat.",sub:"TwoTalk · Effat's space",headline:"Welcome, Effat.",tagline:"Your chat is ready.", avatarKey:"iffat"},
-  "2012":{name:"JUNAID",welcome:"Welcome, Junaid.",sub:"TwoTalk · Junaid's space",headline:"Welcome, Junaid.",tagline:"Your chat is ready.", avatarKey:"junaid"}
+  "1971":{name:"JUNAID",welcome:"Welcome, Junaid.",sub:"TwoTalk · Junaid's space",headline:"Welcome, Junaid.",tagline:"Your chat is ready.", avatarKey:"junaid"}
 };
 
 const ADMIN="19999";
